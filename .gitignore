@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# PyInstaller
+build/
+dist/
+*.spec
+
+# 播放器运行时生成的数据
+video_player_config.json
+video_player_history.json
+thumb_cache/
+VideoPlayerCache/
+
+# IDE
+.idea/
+.vscode/
+.DS_Store
