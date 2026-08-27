@@ -64,11 +64,29 @@ python video_player.py [视频目录]   # 不带参数默认 E:\抖音
 ## 打包为 exe
 
 ```bash
+scripts\build_exe.bat
+```
+
+或手动执行：
+
+```bash
 pip install pyinstaller
 pyinstaller --onefile --noconsole --name video_player video_player.py
 ```
 
 exe 旁边会生成 `video_player_config.json`（配置）、`video_player_history.json`（历史）、`thumb_cache/`（缩略图缓存）。
+
+## 项目结构
+
+```
+py/
+├── video_player.py        # 播放器源码（单文件）
+├── requirements.txt       # 运行依赖
+├── scripts/
+│   └── build_exe.bat      # 一键打包脚本
+└── docs/
+    └── screenshot.png     # 界面截图
+```
 
 ## 技术说明
 
